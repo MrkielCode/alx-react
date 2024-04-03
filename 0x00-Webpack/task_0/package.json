@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/y0rdinary/alx-react.git"
+    "url": "git+https://github.com/mrkielcode/alx-react.git"
   },
-  "author": "y0rdinary",
+  "author": "mrkielcode",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/y0rdinary/alx-react/issues"
+    "url": "https://github.com/mrkielcode/alx-react/issues"
   },
-  "homepage": "https://github.com/y0rdinary/alx-react#readme",
+  "homepage": "https://github.com/mrkielcode/alx-react#readme",
   "devDependencies": {
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
