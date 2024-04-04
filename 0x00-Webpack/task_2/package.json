@@ -1,11 +1,11 @@
 {
   "name": "task_1",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple project for task 1.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js" // Added configuration file option
   },
   "author": "mrkielCode",
   "license": "ISC",
