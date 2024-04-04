@@ -7,14 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "author": "mrkielcode",
+  "author": "mrkielCode",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.0",
+    "jquery": "^3.7.1",
+    "loadash": "^1.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack": "^5.91.0",
+    "webpack-cli": "^4.10.0"
   }
 }
