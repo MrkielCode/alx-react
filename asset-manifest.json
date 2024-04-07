@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/alx-react/static/css/main.7e694cd2.css",
+    "main.js": "/alx-react/static/js/main.339fd626.js",
+    "static/media/holberton-logo.jpg": "/alx-react/static/media/holberton-logo.a74edfdfa4e1be32bf0c.jpg",
+    "index.html": "/alx-react/index.html",
+    "main.7e694cd2.css.map": "/alx-react/static/css/main.7e694cd2.css.map",
+    "main.339fd626.js.map": "/alx-react/static/js/main.339fd626.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e694cd2.css",
+    "static/js/main.339fd626.js"
+  ]
+}
