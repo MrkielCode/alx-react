@@ -7,7 +7,6 @@ function NotificationItem({ type, html, value }) {
   } else if (html) {
     return <li data-urgent dangerouslySetInnerHTML={html} />;
   } else {
-    // Render nothing if neither regular text content nor HTML content is provided
     return null;
   }
 }

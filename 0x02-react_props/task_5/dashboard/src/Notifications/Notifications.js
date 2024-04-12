@@ -12,8 +12,10 @@ function Notification({ displayDrawer, listNotifications }) {
   return (
     <>
       <div className="wrapper">
-        <div className="menuItem">Your notifications</div>
-        {displayDrawer && ( // Render div.Notification only if displayDrawer is true
+        <div className="menuItem">
+          <p>Your notifications</p>
+        </div>
+        {displayDrawer && (
           <div className="Notification">
             <p>Here is the list of notifications</p>
             <button
@@ -58,7 +60,7 @@ Notification.defaultProps = {
   listNotifications: [],
 };
 
-Notification.PropTypes = {
+Notification.propTypes = {
   displayDrawer: PropTypes.bool,
   listNotifications: PropTypes.arrayOf(NotificationItemShape),
 };
