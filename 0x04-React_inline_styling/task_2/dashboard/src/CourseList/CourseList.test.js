@@ -2,7 +2,8 @@ import React from "react";
 import CourseList from "./CourseList";
 import CourseListRow from "./CourseListRow";
 import { shallow } from "enzyme";
-
+import { StyleSheetTestUtils } from "aphrodite";
+StyleSheetTestUtils.suppressStyleInjection();
 const listCourses = [
   { id: 1, name: "ES6", credit: 60 },
   { id: 2, name: "Webpack", credit: 20 },
