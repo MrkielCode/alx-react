@@ -1,7 +1,8 @@
-
 import React from "react";
 import BodySection from "./BodySection";
 import { shallow } from "enzyme";
+import { StyleSheetTestUtils } from "aphrodite";
+StyleSheetTestUtils.suppressStyleInjection();
 
 describe("BodySection tests", () => {
   it("should render correctly", () => {

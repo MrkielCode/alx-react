@@ -3,12 +3,6 @@ import React, { Component } from "react";
 import { StyleSheet, css } from "aphrodite";
 import BodySection from "./BodySection";
 
-const style = StyleSheet.create({
-  margin: {
-    marginBottom: "40px",
-  },
-});
-
 class BodySectionWithMarginBottom extends Component {
   render() {
     return (
@@ -18,6 +12,12 @@ class BodySectionWithMarginBottom extends Component {
     );
   }
 }
+
+const style = StyleSheet.create({
+  margin: {
+    marginBottom: "40px",
+  },
+});
 
 BodySectionWithMarginBottom.propTypes = {
   title: PropTypes.string,

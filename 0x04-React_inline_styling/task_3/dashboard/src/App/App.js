@@ -8,7 +8,7 @@ import { getLatestNotification } from "../utils/utils";
 import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 import BodySection from "../BodySection/BodySection";
 import PropTypes from "prop-types";
-
+import { StyleSheet, css } from "aphrodite";
 const listCourses = [
   { id: 1, name: "ES6", credit: 60 },
   { id: 2, name: "webpack", credit: 20 },
@@ -62,15 +62,32 @@ class App extends Component {
           )}
 
           <BodySectionWithMarginBottom>
-            <BodySection title="News from the School" />
+            <BodySection
+              title="News from the School"
+              className={css(styles.footer)}
+            />
             <p>lorem20 </p>
           </BodySectionWithMarginBottom>
-          <Footer />
+          <Footer className={css(styles.footer)} />
         </div>
       </>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  body: {
+    fontSize: "1.8rem",
+    marginLeft: "5rem",
+    marginTop: "5rem",
+  },
+  footer: {
+    height: "45vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-end",
+  },
+});
 
 App.defaultProps = {
   isLoggedIn: true,

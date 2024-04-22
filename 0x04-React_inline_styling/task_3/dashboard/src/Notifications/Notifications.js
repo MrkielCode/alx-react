@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import NotificationItem from "./NotificationItem";
 import PropTypes from "prop-types";
 import NotificationItemShape from "./NotificationItemShape";
-import "./Notifications.css";
-
+import { StyleSheet, css } from "aphrodite";
 class Notification extends Component {
   constructor(props) {
     super(props);
@@ -29,12 +28,12 @@ class Notification extends Component {
 
     return (
       <>
-        <div className="wrapper">
-          <div className="menuItem">
+        <div className={css(style.wrapper)}>
+          <div className={css(style.menuItem)}>
             <p>Your notifications</p>
           </div>
           {displayDrawer && (
-            <div className="Notification">
+            <div className={css(style.Notification)}>
               <p>Here is the list of notifications</p>
               <button
                 style={{
@@ -52,7 +51,7 @@ class Notification extends Component {
               >
                 x
               </button>
-              <ul>
+              <ul className={css(style.ul)}>
                 {listNotifications.length === 0 ? (
                   <li>No new notification for now</li>
                 ) : (
@@ -75,6 +74,25 @@ class Notification extends Component {
   }
 }
 
+const style = StyleSheet.create({
+  wrapper: {
+    float: "right",
+  },
+  menuItem: {
+    marginBottom: "0.4rem",
+  },
+  Notification: {
+    border: "3px dotted rgb(226, 70, 70)",
+    borderColor: "rgb(226, 70, 70)",
+    padding: "0.3rem",
+    position: "relative",
+    width: "350px",
+  },
+
+  ul: {
+    fontWeight: "bold",
+  },
+});
 Notification.defaultProps = {
   displayDrawer: true,
   listNotifications: [],
