@@ -6,6 +6,8 @@ import Footer from "../Footer/Footer";
 import Notifications from "../Notifications/Notifications";
 import CourseList from "../CourseList/CourseList";
 import { shallow } from "enzyme";
+import { StyleSheetTestUtils } from "aphrodite";
+StyleSheetTestUtils.suppressStyleInjection();
 
 describe("App tests", () => {
   it("renders without crashing", () => {

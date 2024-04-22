@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import "./BodySectionWithMarginBottom.css";
-
+import { StyleSheet, css } from "aphrodite";
 class BodySection extends Component {
   render() {
     return (
@@ -13,6 +12,7 @@ class BodySection extends Component {
   }
 }
 
+const style = StyleSheet.create({});
 BodySection.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node,
