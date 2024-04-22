@@ -23,7 +23,9 @@ describe("Withlogging HOC tests", () => {
       "Component WrappedComponent is mounted"
     );
     wrapper.unmount();
-    expect(consoleSpy).toHaveBeenCalledWith("Component is going to unmount");
+    expect(consoleSpy).toHaveBeenCalledWith(
+      "Component WrappedComponentis going to unmount"
+    );
   });
 
   it("should call console.log on mount and unmount with component name", () => {
